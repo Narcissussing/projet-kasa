@@ -11,4 +11,3 @@ With Docker run command
 
 To stop project run
 `docker-compose down`
-
