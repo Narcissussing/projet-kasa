@@ -13,7 +13,9 @@ export default function Collapse({ titre, contenu }) {
         {titre}
         <img src={chevron} alt="" />
       </button>
-      <div className="collapse-contenu">{contenu}</div>
+      <div className="collapse-contenu">
+        <div className="collapse-texte">{contenu}</div>
+      </div>
     </div>
   );
 }

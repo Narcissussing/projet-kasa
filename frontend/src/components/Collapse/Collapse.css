@@ -25,7 +25,7 @@
 .collapse-contenu {
   max-height: 0;
   overflow: hidden;
-  background: var(--gris);
+  background: var(--gris-clair);
   border-radius:5px;
   font-size: 18px;
   font-weight: 400;
@@ -36,7 +36,7 @@
 .collapse.ouvert .collapse-contenu {
   max-height: 500px;
 }
-.collapse-contenu p {
+.collapse-texte {
   margin: 0;
   padding: 20px 27px 30px;
 }
