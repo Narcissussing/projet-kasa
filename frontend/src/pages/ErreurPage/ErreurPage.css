@@ -1,0 +1,27 @@
+.erreur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 139px;
+  margin-top: 139px;
+  color: var(--rouge);
+  text-align: center;
+}
+
+.erreur h1 {
+  margin: 0;
+  font-size: 288px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.erreur p {
+  margin: 0;
+  font-size: 36px;
+}
+
+.erreur a {
+  color: var(--noir);
+  font-size: 18px;
+  text-decoration: underline;
+}
