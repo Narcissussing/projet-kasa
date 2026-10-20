@@ -1,0 +1,12 @@
+.layout header,
+.layout main {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.layout header {
+  margin-top: 45px;
+}
+
+.layout main {
+  margin-top: 50px;
+}
