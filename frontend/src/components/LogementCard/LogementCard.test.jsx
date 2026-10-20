@@ -4,18 +4,18 @@ import { MemoryRouter } from "react-router-dom";
 import { logements } from "../../test/fixtures/logements";
 import LogementCard from ".";
 
-const renderLogementCard = () => {
+function renderLogementCard() {
   return render(
     <MemoryRouter>
       <LogementCard logement={logements[0]} />
-    </MemoryRouter>
+    </MemoryRouter>,
   );
-};
+}
 
 describe("LogementCard", () => {
   it("doit etre un lien vers le logement", () => {
     renderLogementCard();
-    const link = screen.getByRole("link")
+    const link = screen.getByRole("link");
     expect(link).toBeInTheDocument();
     expect(link).toHaveAttribute("href", `/logement/${logements[0].id}`);
   });
@@ -27,7 +27,10 @@ describe("LogementCard", () => {
   });
   it("doit afficher le titre du logement", () => {
     renderLogementCard();
-    const title = screen.getByRole("heading", { level: 2, name: logements[0].title });
+    const title = screen.getByRole("heading", {
+      level: 2,
+      name: logements[0].title,
+    });
     expect(title).toBeInTheDocument();
   });
 });
