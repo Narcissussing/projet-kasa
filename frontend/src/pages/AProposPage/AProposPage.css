@@ -1,0 +1,12 @@
+.collapses {
+  max-width: 1023px;
+  margin: 38px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.apropos .collapse button {
+  font-size: 24px;
+  padding-left: 15px;
+}
