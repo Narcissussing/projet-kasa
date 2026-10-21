@@ -12,12 +12,12 @@ describe("Slideshow", () => {
     render(
       <Slideshow
         imageUrls={plusieursPhotos.pictures}
-        title={plusieursPhotos.title}
+        titre={plusieursPhotos.title}
       />,
     );
 
     expect(
-      screen.getByRole("img", { name: `Photo 1 de ${plusieursPhotos.title}` }),
+      screen.getByRole("img", { name: `Photo 1 : ${plusieursPhotos.title}` }),
     ).toBeInTheDocument();
     expect(
       screen.getByRole("button", { name: "Image précédente" }),
@@ -33,17 +33,20 @@ describe("Slideshow", () => {
     render(
       <Slideshow
         imageUrls={plusieursPhotos.pictures}
-        title={plusieursPhotos.title}
+        titre={plusieursPhotos.title}
       />,
     );
     const btnSuivant = screen.getByRole("button", { name: "Image suivante" });
     const btnPrecedent = screen.getByRole("button", {
       name: "Image précédente",
     });
-    const photo = (n) =>
-      screen.getByRole("img", {
-        name: `Photo ${n} de ${plusieursPhotos.title}`,
+
+    //Trouver la photo par son alt
+    function photo(n) {
+      return screen.getByRole("img", {
+        name: `Photo ${n} : ${plusieursPhotos.title}`,
       });
+    }
 
     await user.click(btnSuivant);
     expect(photo(2)).toBeInTheDocument();
@@ -57,11 +60,11 @@ describe("Slideshow", () => {
     await user.click(btnPrecedent);
     expect(photo(1)).toBeInTheDocument();
 
-    // avant la première : la dernière
+    //la première - la dernière
     await user.click(btnPrecedent);
     expect(photo(5)).toBeInTheDocument();
 
-    // après la dernière : la première
+    //la dernière- la première
     await user.click(btnSuivant);
     expect(photo(1)).toBeInTheDocument();
   });
@@ -71,7 +74,7 @@ describe("Slideshow", () => {
     render(
       <Slideshow
         imageUrls={plusieursPhotos.pictures}
-        title={plusieursPhotos.title}
+        titre={plusieursPhotos.title}
       />,
     );
 
@@ -80,7 +83,7 @@ describe("Slideshow", () => {
   });
 
   it("masque les flèches et le compteur si une seule image est présente", () => {
-    render(<Slideshow imageUrls={unePhoto.pictures} title={unePhoto.title} />);
+    render(<Slideshow imageUrls={unePhoto.pictures} titre={unePhoto.title} />);
 
     expect(
       screen.queryByRole("button", { name: "Image précédente" }),

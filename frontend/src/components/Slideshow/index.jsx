@@ -3,7 +3,7 @@ import flecheGauche from "../../assets/svg/arrow-left.svg";
 import flecheDroite from "../../assets/svg/arrow-right.svg";
 import "./Slideshow.css";
 
-export default function Slideshow({ imageUrls, title }) {
+export default function Slideshow({ imageUrls, titre }) {
   const [imageIndex, setImageIndex] = useState(0);
 
   function imageSuivante() {
@@ -22,7 +22,7 @@ export default function Slideshow({ imageUrls, title }) {
 
   return (
     <section
-      aria-label={`Carrousel d'images de ${title}`}
+      aria-label={`Carrousel d'images : ${titre}`}
       className="img-slider-container"
     >
       <div className="img-slider">
@@ -30,7 +30,7 @@ export default function Slideshow({ imageUrls, title }) {
           <img
             key={url}
             src={url}
-            alt={`Photo ${index + 1} de ${title}`}
+            alt={`Photo ${index + 1} : ${titre}`}
             aria-hidden={imageIndex !== index}
             className="img-slider-img"
             style={{ translate: `${-100 * imageIndex}%` }}
