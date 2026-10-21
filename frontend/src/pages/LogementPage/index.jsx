@@ -23,46 +23,59 @@ export default function LogementPage() {
     equipments,
     tags,
   } = logement;
+  const [prenom, ...nom] = host.name.split(" ");
 
   return (
     <article>
       <Slideshow titre={title} imageUrls={pictures} />
+      <div className="logement-entete">
+        <div className="logement-info">
+          <h1 className="logement-titre">{title}</h1>
+          <p className="logement-lieu">{location}</p>
+          <ul className="logement-tags">
+            {tags.map((tag) => (
+              <li className="tag" key={tag}>
+                {tag}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      <div>
-        <h1>{title}</h1>
-        <p>{location}</p>
-        <ul>
-          {tags.map((tag) => (
-            <li key={tag}>{tag}</li>
-          ))}
-        </ul>
-      </div>
+        <div className="logement-hote-note">
+          <div className="logement-hote">
+            <p className="hote-nom">
+              {prenom}
+              <br />
+              {nom.join(" ")}
+            </p>
 
-      <div>
-        <div>
-          <p>{host.name}</p>
-          <img src={host.picture} alt={`Photo de l'hôte {host.name}`} />
+            <img
+              className="hote-photo"
+              src={host.picture}
+              alt={`Photo de l'hôte ${host.name}`}
+            />
+          </div>
           <Rating rating={rating} />
         </div>
       </div>
 
-      <div></div>
-
-      <section>
-        <Collapse titre="Description" contenu={description} />
-      </section>
-      <section>
-        <Collapse
-          titre="Équipements"
-          contenu={
-            <ul>
-              {equipments.map((equipement) => (
-                <li key={equipement}>{equipement}</li>
-              ))}
-            </ul>
-          }
-        />
-      </section>
+      <div className="logement-details">
+        <section>
+          <Collapse titre="Description" contenu={description} />
+        </section>
+        <section>
+          <Collapse
+            titre="Équipements"
+            contenu={
+              <ul className="logement-details-equipements">
+                {equipments.map((equipement) => (
+                  <li className="equipement" key={equipement}>{equipement}</li>
+                ))}
+              </ul>
+            }
+          />
+        </section>
+      </div>
     </article>
   );
 }

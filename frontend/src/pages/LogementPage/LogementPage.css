@@ -1,0 +1,81 @@
+.logement-entete{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 24px;
+}
+.logement-info{
+    padding-top: 6px;
+}
+
+.logement-titre{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.426;
+    color: var(--rouge);
+    margin: 0;
+}
+.logement-lieu{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.426;
+    color: var(--noir);
+    margin: 0;
+}
+.logement-tags{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0 24px;
+    padding: 0;
+}
+.tag{
+    background: var(--rouge);
+    color: var(--blanc);
+    min-width: 115px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.426;
+    padding: 3px 22px 2px;
+    border-radius: 10px;
+}
+.logement-hote-note{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 21px;
+}
+.logement-hote{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hote-photo{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.hote-nom{
+    text-align: right;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.426;
+    color: var(--rouge);
+    margin: 0;
+}
+.logement-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 76px;
+    align-items: start;
+}
+
+.logement-details-equipements{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

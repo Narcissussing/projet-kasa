@@ -22,7 +22,7 @@ export default function Slideshow({ imageUrls, titre }) {
 
   return (
     <section
-      aria-label={`Carrousel d'images de ${titre}`}
+      aria-label={`Carrousel d'images : ${titre}`}
       className="img-slider-container"
     >
       <div className="img-slider">
@@ -30,7 +30,7 @@ export default function Slideshow({ imageUrls, titre }) {
           <img
             key={url}
             src={url}
-            alt={`Photo ${index + 1} de ${titre}`}
+            alt={`Photo ${index + 1} : ${titre}`}
             aria-hidden={imageIndex !== index}
             className="img-slider-img"
             style={{ translate: `${-100 * imageIndex}%` }}
