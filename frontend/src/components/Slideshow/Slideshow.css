@@ -59,3 +59,20 @@
   color: var(--blanc);
   font-size: 18px;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .img-slider-container {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .img-slider-btn {
+    padding: 0.5rem;
+  }
+  .img-slider-btn img {
+    height: 20px;
+  }
+  .img-slider-counter {
+    display: none;
+  }
+}

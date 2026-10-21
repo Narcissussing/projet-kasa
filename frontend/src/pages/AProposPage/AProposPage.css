@@ -6,7 +6,18 @@
   gap: 30px;
 }
 
-.apropos .collapse button {
-  font-size: 24px;
-  padding: 10px 15px;
+/* Gérer collapse pour desktop*/
+@media (min-width: 769px) {
+  .apropos .collapse button {
+    font-size: 24px;
+    padding: 10px 15px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .collapses {
+    margin-top: 19px;
+    gap: 20px;
+  }
 }
