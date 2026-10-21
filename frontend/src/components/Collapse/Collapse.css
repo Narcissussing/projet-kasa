@@ -63,11 +63,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .collapses {
-    margin-top: 19px;
-    gap: 20px;
-  }
-  .apropos .collapse button {
+  .collapse button {
     height: 30px;
     padding: 0 10px;
     font-size: 13px;

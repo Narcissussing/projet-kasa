@@ -2,3 +2,13 @@
   display: flex;
   gap: 0.25rem;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+.rating-etoiles {
+    gap: 2px;
+}
+ .rating-etoiles img {
+    width: 18px;
+  }
+}
