@@ -12,7 +12,7 @@ describe("Slideshow", () => {
     render(
       <Slideshow
         imageUrls={plusieursPhotos.pictures}
-        title={plusieursPhotos.title}
+        titre={plusieursPhotos.title}
       />,
     );
 
@@ -33,7 +33,7 @@ describe("Slideshow", () => {
     render(
       <Slideshow
         imageUrls={plusieursPhotos.pictures}
-        title={plusieursPhotos.title}
+        titre={plusieursPhotos.title}
       />,
     );
     const btnSuivant = screen.getByRole("button", { name: "Image suivante" });
@@ -71,7 +71,7 @@ describe("Slideshow", () => {
     render(
       <Slideshow
         imageUrls={plusieursPhotos.pictures}
-        title={plusieursPhotos.title}
+        titre={plusieursPhotos.title}
       />,
     );
 
@@ -80,7 +80,7 @@ describe("Slideshow", () => {
   });
 
   it("masque les flèches et le compteur si une seule image est présente", () => {
-    render(<Slideshow imageUrls={unePhoto.pictures} title={unePhoto.title} />);
+    render(<Slideshow imageUrls={unePhoto.pictures} titre={unePhoto.title} />);
 
     expect(
       screen.queryByRole("button", { name: "Image précédente" }),

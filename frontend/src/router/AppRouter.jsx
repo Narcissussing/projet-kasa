@@ -3,6 +3,7 @@ import Layout from "../Layout";
 import AccueilPage from "../pages/AccueilPage";
 import AProposPage from "../pages/AProposPage";
 import ErreurPage from "../pages/ErreurPage";
+import LogementPage from "../pages/LogementPage";
 
 export default function AppRouter() {
   return (
@@ -10,6 +11,7 @@ export default function AppRouter() {
       <Route element={<Layout />}>
         <Route index element={<AccueilPage />} />
         <Route path="a-propos" element={<AProposPage />} />
+        <Route path="logement/:id" element={<LogementPage />} />
         <Route path="*" element={<ErreurPage />} />
       </Route>
     </Routes>
