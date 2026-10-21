@@ -25,3 +25,29 @@
   font-size: 18px;
   text-decoration: underline;
 }
+
+.erreur p br {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .erreur {
+    gap: 113px;
+    margin: 86px 0 63px;
+  }
+
+  .erreur h1 {
+    font-size: 96px;
+  }
+
+  .erreur p {
+    font-size: 18px;
+  }
+  .erreur a {
+    font-size: 14px;
+  }
+  .erreur p br {
+    display: inline;
+  }
+}
