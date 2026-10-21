@@ -17,3 +17,18 @@ footer p {
   margin: 0;
   font-size: 24px;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer {
+    gap: 11px;
+    padding-bottom: 58px;
+  }
+
+  footer p {
+    max-width: 134px;
+    font-size: 12px;
+    line-height: 1.426;
+    text-align: center;
+  }
+}

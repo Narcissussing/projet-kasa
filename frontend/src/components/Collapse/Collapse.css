@@ -60,3 +60,25 @@
     transform 0.2s ease 0.15s,
     opacity 0.2s ease 0.15s;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .collapses {
+    margin-top: 19px;
+    gap: 20px;
+  }
+  .apropos .collapse button {
+    height: 30px;
+    padding: 0 10px;
+    font-size: 13px;
+  }
+  .collapse button img {
+    width: 16px;
+  }
+  .collapse-contenu {
+    font-size: 12px;
+  }
+  .collapse.ouvert .collapse-texte {
+    padding: 13px 20px 19px;
+  }
+}
