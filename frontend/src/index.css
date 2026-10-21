@@ -17,6 +17,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: var(--noir);
+  -webkit-font-smoothing: antialiased;
 }
 
 img {

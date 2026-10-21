@@ -1,10 +1,10 @@
 import "./Banner.css";
 
 export default function Banner({ image, texte }) {
-    //image décorative
+  //image décorative
   return (
-    <div className="banner">
-      <img src={image} alt="" /> 
+    <div className={texte ? "banner banner-texte" : "banner"}>
+      <img src={image} alt="" />
       {texte && <h1>{texte}</h1>}
     </div>
   );

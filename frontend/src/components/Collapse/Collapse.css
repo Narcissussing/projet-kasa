@@ -1,17 +1,17 @@
-.collapse button{
-    all: unset;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background: var(--rouge);
-    color: var(--blanc);
-    font-weight: 700;
-    font-size: 18px;
-    cursor: pointer;
+.collapse button {
+  all: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: var(--rouge);
+  color: var(--blanc);
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
 }
 .collapse button img {
   transform: rotate(-90deg);
@@ -23,20 +23,40 @@
 }
 
 .collapse-contenu {
-  max-height: 0;
+  display: grid;
+  grid-template-rows: 0fr;
   overflow: hidden;
   background: var(--gris-clair);
-  border-radius:5px;
+  border-radius: 5px;
   font-size: 18px;
   font-weight: 400;
   line-height: 142.6%;
-  transition: max-height 0.3s ease;
+  transition: grid-template-rows 0.3s ease;
 }
 
 .collapse.ouvert .collapse-contenu {
-  max-height: 500px;
+  grid-template-rows: 1fr;
 }
+
 .collapse-texte {
   margin: 0;
-  padding: 20px 27px 30px;
+  padding: 0 20px;
+  min-height: 0;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition:
+    transform 0.4s ease,
+    padding 0.4s ease,
+    opacity 0.3s ease;
+}
+
+/* La boîte s'ouvre et puis le texte suit */
+.collapse.ouvert .collapse-texte {
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    padding 0.3s ease,
+    transform 0.2s ease 0.15s,
+    opacity 0.2s ease 0.15s;
 }
