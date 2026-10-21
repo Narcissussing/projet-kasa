@@ -17,7 +17,11 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 42%,
+    rgba(0, 0, 0, 0.205) 100%
+  );
 }
 
 .logement-card h2 {
@@ -30,5 +34,5 @@
   color: var(--blanc);
   font-size: 18px;
   font-weight: 700;
-
+  line-height: 1.426;
 }
