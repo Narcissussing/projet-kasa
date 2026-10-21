@@ -13,7 +13,7 @@ export default function Collapse({ titre, contenu }) {
         {titre}
         <img src={chevron} alt="" />
       </button>
-      <div className="collapse-contenu">
+      <div className="collapse-contenu" inert={!estVisible}>
         <div className="collapse-texte">{contenu}</div>
       </div>
     </div>

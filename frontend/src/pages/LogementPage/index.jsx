@@ -10,7 +10,7 @@ export default function LogementPage() {
   const { logement, error, loading } = useLogement(id);
 
   if (error) return <p>{error}</p>;
-  if (loading) return <p>Chargement…</p>;
+  if (loading) return <p>Chargement...</p>;
   if (!logement) return <Navigate to="/404" replace />;
 
   const {
@@ -27,7 +27,8 @@ export default function LogementPage() {
 
   return (
     <article>
-      <Slideshow titre={title} imageUrls={pictures} />
+      <title>{`${title} · Kasa`}</title>
+      <Slideshow titre={title} images={pictures} />
       <div className="logement-entete">
         <div className="logement-info">
           <h1 className="logement-titre">{title}</h1>
@@ -69,7 +70,9 @@ export default function LogementPage() {
             contenu={
               <ul className="logement-details-equipements">
                 {equipments.map((equipement) => (
-                  <li className="equipement" key={equipement}>{equipement}</li>
+                  <li className="equipement" key={equipement}>
+                    {equipement}
+                  </li>
                 ))}
               </ul>
             }

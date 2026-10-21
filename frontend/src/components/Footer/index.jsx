@@ -1,12 +1,12 @@
-import './Footer.css'
-import logoFooter from "../../assets/svg/logo-footer.svg"
+import "./Footer.css";
+import logoFooter from "../../assets/svg/logo-pied-de-page.svg";
 
 export default function Footer() {
-    const annee = new Date().getFullYear()
+  const annee = new Date().getFullYear();
   return (
     <footer>
-        <img src={logoFooter} alt="Logo Kasa" />
-        <p>© {annee} Kasa. All rights reserved</p>
+      <img src={logoFooter} alt="Logo Kasa" />
+      <p>© {annee} Kasa. All rights reserved</p>
     </footer>
-  )
+  );
 }

@@ -21,7 +21,7 @@ describe("LogementCard", () => {
   });
   it("doit afficher la photo du logement", () => {
     renderLogementCard();
-    const img = screen.getByRole("img");
+    const img = screen.getByRole("presentation");
     expect(img).toBeInTheDocument();
     expect(img).toHaveAttribute("src", logements[0].cover);
   });

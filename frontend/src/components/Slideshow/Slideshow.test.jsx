@@ -11,7 +11,7 @@ describe("Slideshow", () => {
   it("affiche la première image, les flèches et le compteur", () => {
     render(
       <Slideshow
-        imageUrls={plusieursPhotos.pictures}
+        images={plusieursPhotos.pictures}
         titre={plusieursPhotos.title}
       />,
     );
@@ -32,7 +32,7 @@ describe("Slideshow", () => {
     const user = userEvent.setup();
     render(
       <Slideshow
-        imageUrls={plusieursPhotos.pictures}
+        images={plusieursPhotos.pictures}
         titre={plusieursPhotos.title}
       />,
     );
@@ -73,7 +73,7 @@ describe("Slideshow", () => {
     const user = userEvent.setup();
     render(
       <Slideshow
-        imageUrls={plusieursPhotos.pictures}
+        images={plusieursPhotos.pictures}
         titre={plusieursPhotos.title}
       />,
     );
@@ -83,7 +83,7 @@ describe("Slideshow", () => {
   });
 
   it("masque les flèches et le compteur si une seule image est présente", () => {
-    render(<Slideshow imageUrls={unePhoto.pictures} titre={unePhoto.title} />);
+    render(<Slideshow images={unePhoto.pictures} titre={unePhoto.title} />);
 
     expect(
       screen.queryByRole("button", { name: "Image précédente" }),
