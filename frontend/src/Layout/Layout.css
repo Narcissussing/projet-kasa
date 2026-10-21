@@ -6,26 +6,26 @@
 .layout header,
 .layout main {
   width: 100%;
-  max-width: 1280px;
+  max-width: 128rem;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 2rem;
 }
 .layout header {
-  margin-top: 45px;
+  margin-top: 4.5rem;
 }
 
 .layout main {
-  margin-top: 50px;
+  margin-top: 5rem;
   flex: 1;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .layout header {
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 
   .layout main {
-    margin-top: 27px;
+    margin-top: 2.7rem;
   }
 }

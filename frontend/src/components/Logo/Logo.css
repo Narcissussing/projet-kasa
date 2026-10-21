@@ -1,9 +1,9 @@
 .logo img {
-  height: 68px;
+  height: 6.8rem;
 }
 /* Responsive */
 @media (max-width: 768px) {
     .logo img {
-        height: 47px;
+        height: 4.7rem;
     }
 }

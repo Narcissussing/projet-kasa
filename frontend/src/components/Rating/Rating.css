@@ -6,9 +6,9 @@
 /* Responsive */
 @media (max-width: 768px) {
 .rating-etoiles {
-    gap: 2px;
+    gap: 0.2rem;
 }
  .rating-etoiles img {
-    width: 18px;
+    width: 1.8rem;
   }
 }

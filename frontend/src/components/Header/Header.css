@@ -6,11 +6,11 @@
 
 .header nav {
   display: flex;
-  gap: 57px;
+  gap: 5.7rem;
 }
 
 .header nav a {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 
@@ -21,11 +21,11 @@
 /* Responsive */
 @media (max-width: 768px) {
   .header nav {
-    gap: 26px;
+    gap: 2.6rem;
   }
 
   .header nav a {
-    font-size: 12px;
+    font-size: 1.2rem;
     text-transform: uppercase;
   }
 }
