@@ -36,3 +36,9 @@
   font-weight: 700;
   line-height: 1.426;
 }
+/* Responsive */
+@media (max-width: 768px) {
+  .logement-card {
+    aspect-ratio: 335 / 255;
+  }
+}

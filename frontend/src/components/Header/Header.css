@@ -17,3 +17,15 @@
 .header nav a.active {
   text-decoration: underline;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header nav {
+    gap: 26px;
+  }
+
+  .header nav a {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
