@@ -12,8 +12,14 @@
   box-sizing: border-box;
 }
 
+/* 62.5 % = 10px par défaut : 1rem = 10px, et suit le réglage de taille du navigateur */
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
+  font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: var(--noir);

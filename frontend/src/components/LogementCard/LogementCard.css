@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   aspect-ratio: 1 / 1;
-  border-radius: 10px;
+  border-radius: 1rem;
   overflow: hidden;
 }
 
@@ -26,13 +26,13 @@
 
 .logement-card h2 {
   position: absolute;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
+  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
   z-index: 1;
   margin: 0;
   color: var(--blanc);
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.426;
 }

@@ -2,32 +2,32 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 29px;
-  padding: 66px 20px 29px;
-  margin-top: 50px;
+  gap: 2.9rem;
+  padding: 6.6rem 2rem 2.9rem;
+  margin-top: 5rem;
   background: var(--noir);
   color: var(--blanc);
 }
 
 footer img {
-  width: 122px;
+  width: 12.2rem;
 }
 
 footer p {
   margin: 0;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   footer {
-    gap: 11px;
-    padding-bottom: 58px;
+    gap: 1.1rem;
+    padding-bottom: 5.8rem;
   }
 
   footer p {
-    max-width: 134px;
-    font-size: 12px;
+    max-width: 13.4rem;
+    font-size: 1.2rem;
     line-height: 1.426;
     text-align: center;
   }

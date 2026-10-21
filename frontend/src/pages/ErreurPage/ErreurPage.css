@@ -2,27 +2,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 139px;
-  margin-top: 139px;
+  gap: 13.9rem;
+  margin-top: 13.9rem;
   color: var(--rouge);
   text-align: center;
 }
 
 .erreur h1 {
   margin: 0;
-  font-size: 288px;
+  font-size: 28.8rem;
   font-weight: 700;
   line-height: 1;
 }
 
 .erreur p {
   margin: 0;
-  font-size: 36px;
+  font-size: 3.6rem;
 }
 
 .erreur a {
   color: var(--noir);
-  font-size: 18px;
+  font-size: 1.8rem;
   text-decoration: underline;
 }
 
@@ -33,19 +33,19 @@
 /* Responsive */
 @media (max-width: 768px) {
   .erreur {
-    gap: 113px;
-    margin: 86px 0 63px;
+    gap: 11.3rem;
+    margin: 8.6rem 0 6.3rem;
   }
 
   .erreur h1 {
-    font-size: 96px;
+    font-size: 9.6rem;
   }
 
   .erreur p {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   .erreur a {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   .erreur p br {
     display: inline;
