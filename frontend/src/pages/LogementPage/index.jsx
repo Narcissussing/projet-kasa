@@ -61,23 +61,19 @@ export default function LogementPage() {
       </div>
 
       <div className="logement-details">
-        <section>
-          <Collapse titre="Description" contenu={description} />
-        </section>
-        <section>
-          <Collapse
-            titre="Équipements"
-            contenu={
-              <ul className="logement-details-equipements">
-                {equipments.map((equipement) => (
-                  <li className="equipement" key={equipement}>
-                    {equipement}
-                  </li>
-                ))}
-              </ul>
-            }
-          />
-        </section>
+        <Collapse titre="Description" contenu={description} />
+        <Collapse
+          titre="Équipements"
+          contenu={
+            <ul className="logement-details-equipements">
+              {equipments.map((equipement) => (
+                <li className="equipement" key={equipement}>
+                  {equipement}
+                </li>
+              ))}
+            </ul>
+          }
+        />
       </div>
     </article>
   );

@@ -33,12 +33,12 @@
   transform: translateY(-50%);
   transition:
     scale 0.1s ease-in-out,
-    background-color 0.1s ease-in-out;
+    background-color 0.2s ease-in-out;
 }
 
 .carrousel-bouton:hover,
 .carrousel-bouton:focus-visible {
-  scale: 1.2;
+  scale: 1.05;
 }
 
 /* Focus visible au clavier (all: unset retire l'outline) */
