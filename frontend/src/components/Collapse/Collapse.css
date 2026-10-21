@@ -1,3 +1,8 @@
+.collapse-titre {
+  margin: 0;
+  font: inherit;
+}
+
 .collapse button {
   all: unset;
   display: flex;

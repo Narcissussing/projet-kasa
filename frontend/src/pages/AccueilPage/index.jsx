@@ -22,7 +22,7 @@ export default function AccueilPage() {
         }
       />
 
-      <section className="logements">
+      <div className="logements">
         <ul className="logements-container">
           {logements.map((logement) => (
             <li key={logement.id} className="logement-item">
@@ -30,7 +30,7 @@ export default function AccueilPage() {
             </li>
           ))}
         </ul>
-      </section>
+      </div>
     </div>
   );
 }
