@@ -19,3 +19,17 @@
   padding: 0;
   margin: 0;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logements {
+    margin-top: 22px;
+    padding: 0;
+    background: none;
+  }
+
+  .logements-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

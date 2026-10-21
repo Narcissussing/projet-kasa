@@ -1,7 +1,8 @@
 .layout header,
 .layout main {
-  max-width: 1240px;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .layout header {
   margin-top: 45px;
@@ -9,4 +10,15 @@
 
 .layout main {
   margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .layout header {
+    margin-top: 20px;
+  }
+
+  .layout main {
+    margin-top: 27px;
+  }
 }

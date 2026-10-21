@@ -9,10 +9,9 @@ export default function AccueilPage() {
   if (error) return <p>{error}</p>;
   if (loading) return <p>Charge...</p>;
 
-  const bannerTexte = "Chez vous, partout et ailleurs";
   return (
     <div>
-      <Banner image={bannerImage} texte={bannerTexte} />
+      <Banner image={bannerImage} texte={<>Chez vous, <br />partout et ailleurs</>} />
 
       <section className="logements">
         <ul className="logements-container">

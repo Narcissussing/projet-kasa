@@ -1,3 +1,9 @@
 .logo img {
   height: 68px;
 }
+/* Responsive */
+@media (max-width: 768px) {
+    .logo img {
+        height: 47px;
+    }
+}
