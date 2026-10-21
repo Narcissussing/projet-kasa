@@ -1,17 +1,26 @@
 import "./AccueilPage.css";
 import Banner from "../../components/Banner";
-import bannerImage from "../../assets/images/banner-accueil.jpg";
+import bannerImage from "../../assets/images/banniere-accueil.jpg";
 import useListeLogements from "../../hooks/useListeLogements";
 import LogementCard from "../../components/LogementCard";
 
 export default function AccueilPage() {
   const { logements, loading, error } = useListeLogements();
   if (error) return <p>{error}</p>;
-  if (loading) return <p>Charge...</p>;
+  if (loading) return <p>Chargement...</p>;
 
   return (
     <div>
-      <Banner image={bannerImage} texte={<>Chez vous, <br />partout et ailleurs</>} />
+      <title>Accueil · Kasa</title>
+      <Banner
+        image={bannerImage}
+        texte={
+          <>
+            Chez vous, <br />
+            partout et ailleurs
+          </>
+        }
+      />
 
       <section className="logements">
         <ul className="logements-container">

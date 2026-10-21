@@ -1,6 +1,6 @@
 import "./Rating.css";
-import etoileActive from "../../assets/svg/star-active.svg";
-import etoileDesactive from "../../assets/svg/star-inactive.svg";
+import etoileActive from "../../assets/svg/etoile-active.svg";
+import etoileDesactive from "../../assets/svg/etoile-inactive.svg";
 
 export default function Rating({ rating }) {
   const nombreEtoiles = Number(rating);
