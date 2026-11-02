@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import { logements } from "../../test/fixtures/logements";
-import LogementCard from ".";
+import { logements } from "../fixtures/logements";
+import LogementCard from "../../components/LogementCard";
 
 function renderLogementCard() {
   return render(

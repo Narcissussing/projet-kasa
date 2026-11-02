@@ -1,8 +1,8 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Slideshow from ".";
-import { logements } from "../../test/fixtures/logements";
+import Slideshow from "../../components/Slideshow";
+import { logements } from "../fixtures/logements";
 
 const plusieursPhotos = logements[0]; // 5 photos
 const unePhoto = logements[1]; // 1 photo

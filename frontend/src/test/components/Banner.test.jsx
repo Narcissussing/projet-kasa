@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import Banner from ".";
+import Banner from "../../components/Banner";
 import { render, screen } from "@testing-library/react";
 
 describe("Banner", () => {
