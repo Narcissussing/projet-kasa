@@ -71,7 +71,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 7.6rem;
-  align-items: start;
+  align-items: stretch;
+}
+
+.logement-details .collapse {
+  display: flex;
+  flex-direction: column;
+}
+
+.logement-details .collapse.ouvert .collapse-contenu {
+  flex: 1;
 }
 
 .logement-details-equipements {

@@ -55,6 +55,9 @@
   right: 0;
   transform-origin: left center;
 }
+.carrousel-bouton:active {
+  scale: 0.95;
+}
 
 .carrousel-compteur {
   position: absolute;

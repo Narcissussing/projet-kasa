@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import Collapse from ".";
+import Collapse from "../../components/Collapse";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
