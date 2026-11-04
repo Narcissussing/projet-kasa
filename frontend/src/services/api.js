@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/properties";
+const API_URL = `http://${window.location.hostname}:8080/api/properties`;
 
 //Tous les logements
 export async function getLogements() {

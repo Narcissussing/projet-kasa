@@ -18,7 +18,7 @@
   font-size: 1.8rem;
   cursor: pointer;
 }
-/* Focus visible au clavier (all: unset retire l'outline) */
+
 .collapse button:focus-visible {
   outline: 2px solid var(--noir);
   outline-offset: 2px;

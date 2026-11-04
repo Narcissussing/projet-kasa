@@ -79,6 +79,7 @@
   flex-direction: column;
 }
 
+/* le contenu du collapse occupe toute la hauteur disponible */
 .logement-details .collapse.ouvert .collapse-contenu {
   flex: 1;
 }
